@@ -3,9 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MaduTasks — a agenda de estudos que nasceu de uma promessa</title>
-<meta name="description" content="MaduTasks é uma agenda de estudos com provas, trabalhos, lembretes, calendário, Pomodoro e resumo. Funciona 100% offline.">
-<meta name="theme-color" content="#E75480">
+<title>Studify — provas, trabalhos e prazos num lugar só</title>
+<meta name="description" content="Studify é uma agenda de estudos para Android: provas, trabalhos, lembretes, calendário, Pomodoro, resumo e widget. Funciona 100% offline.">
+<meta name="theme-color" content="#1F3A93">
+<meta property="og:title" content="Studify — provas, trabalhos e prazos num lugar só">
+<meta property="og:description" content="Agenda de estudos offline para Android, com lembretes, Pomodoro, calendário e widget.">
+<meta property="og:image" content="assets/icon.png">
 <link rel="icon" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/icon.png">
 <link rel="stylesheet" href="style.css">
@@ -14,59 +17,57 @@
 
 <header class="nav">
   <div class="wrap">
-    <a class="brand" href="#topo" aria-label="MaduTasks, voltar ao topo"><img class="logo-claro" src="assets/logo-claro.svg" alt="MaduTasks" width="1835" height="452"><img class="logo-escuro" src="assets/logo-escuro.svg" alt="" width="1835" height="452"></a>
+    <a class="brand" href="#topo" aria-label="Studify, voltar ao topo"><img class="so-claro" src="assets/logo-claro.png" alt="Studify" width="1835" height="452"><img class="so-escuro" src="assets/logo-escuro.png" alt="" width="1835" height="452"></a>
     <ul>
-      <li><a href="#video">Vídeo</a></li>
+      <li><a href="#acao">Em ação</a></li>
       <li><a href="#como">Como funciona</a></li>
-      <li><a href="#materias">Matérias</a></li>
       <li><a href="#calendario">Calendário</a></li>
       <li><a href="#pomodoro">Pomodoro</a></li>
       <li><a href="#privacidade">Privacidade</a></li>
     </ul>
     <div class="nav-r">
-      <button class="theme-btn" id="themeBtn" aria-label="Alternar tema claro e escuro"><i class="fi">&#xf1a7;</i></button>
+      <button class="theme-btn" id="themeBtn" aria-label="Alternar tema claro e escuro"><i class="ic">&#xe11e;</i></button>
       <a class="btn btn-primary btn-sm" href="#baixar">Baixar</a>
     </div>
   </div>
 </header>
 
 <!-- HERO -->
-<div class="hero" id="topo">
+<div class="hero pautado" id="topo">
   <div class="wrap">
     <div>
-      <span class="pill"><i class="fi">&#xf214;</i> 100% offline · sem anúncio · com lembretes</span>
-      <h1>A agenda de estudos que nasceu de uma <em>promessa.</em></h1>
-      <p class="lead">Provas, trabalhos e entregas num lugar só, bonito e simples. Você anota, o MaduTasks <strong>avisa na hora certa</strong> e mostra como andam seus estudos.</p>
+      <span class="pill"><i class="ic">&#xe1af;</i> 100% offline · sem anúncio · sem cadastro</span>
+      <h1>Provas, trabalhos e prazos <em>num lugar só.</em></h1>
+      <p class="lead">Você anota, o Studify <strong>avisa na hora certa</strong> e mostra como andam seus estudos. Abriu o app, sabe em dois segundos o que vence primeiro.</p>
       <div class="cta">
-        <a class="btn btn-primary" href="#baixar"><i class="fi">&#xf15b;</i> Baixar para Android</a>
-        <a class="btn btn-ghost" href="#como">Ver como funciona</a>
+        <a class="btn btn-primary" data-apk href="#baixar"><i class="ic">&#xe0b2;</i> Baixar para Android</a>
+        <a class="btn btn-ghost" href="#acao">Ver o app em ação</a>
       </div>
       <div class="hero-note">
-        <span><i class="fi">&#xf12b;</i> Dados só no seu aparelho</span>
-        <span><i class="fi">&#xf12b;</i> Tema claro e escuro</span>
+        <span><i class="ic">&#xe06c;</i> Dados só no seu aparelho</span>
+        <span><i class="ic">&#xe06c;</i> Tema claro e escuro</span>
+        <span><i class="ic">&#xe06c;</i> Widget na tela inicial</span>
       </div>
     </div>
     <div class="float">
-      <div class="phone"><div class="screen"><img src="assets/telas/home-light.png" alt="Tela de tarefas do MaduTasks" width="1080" height="2400"></div></div>
+      <div class="phone"><div class="screen"><img class="so-claro" src="assets/telas/tarefas.png" alt="Tela de tarefas do Studify" width="540" height="1169"><img class="so-escuro" src="assets/telas/tarefas-escuro.png" alt="Tela de tarefas do Studify no tema escuro" width="540" height="1169"></div></div>
     </div>
   </div>
 </div>
 
-<!-- VÍDEO -->
-<section id="video">
-  <div class="wrap video-grid">
+<!-- EM AÇÃO -->
+<section id="acao">
+  <div class="wrap center">
     <div class="rv">
-      <div class="eyebrow">Veja em poucos segundos</div>
-      <h2>Do primeiro lembrete à <em>sequência de estudos.</em></h2>
-      <p class="sub">Um passeio rápido pelo app: cadastrar uma prova, receber o aviso, usar o Pomodoro e acompanhar o resumo.</p>
+      <div class="eyebrow">Em ação</div>
+      <h2>Rápido de usar, <em>gostoso de concluir.</em></h2>
+      <p class="sub">Gravado direto do app: criar uma prova, riscar uma tarefa, trocar de tela e de tema.</p>
     </div>
-    <div class="rv">
-      <!-- Depois de postar no YouTube, cole o ID em YOUTUBE_ID (script no fim da página). -->
-      <div class="yt" id="videoBox">
-        <video controls playsinline preload="metadata" poster="assets/video-capa.jpg">
-          <source src="MaduTasks-promo.mp4" type="video/mp4">
-        </video>
-      </div>
+    <div class="acao">
+      <figure class="rv"><div class="phone"><div class="screen"><img src="assets/gifs/nova-tarefa.gif" alt="Criando uma prova no Studify" width="300" height="649" loading="lazy"></div></div><figcaption>Nova tarefa<small>Tipo, matéria, prazo e lembrete</small></figcaption></figure>
+      <figure class="rv"><div class="phone"><div class="screen"><img src="assets/gifs/concluir.gif" alt="Concluindo uma tarefa com confete" width="300" height="649" loading="lazy"></div></div><figcaption>Concluir<small>Um toque, com confete</small></figcaption></figure>
+      <figure class="rv"><div class="phone"><div class="screen"><img src="assets/gifs/tour.gif" alt="Passeio pelas abas do app" width="300" height="649" loading="lazy"></div></div><figcaption>Quatro abas<small>Tarefas, calendário, Pomodoro e resumo</small></figcaption></figure>
+      <figure class="rv"><div class="phone"><div class="screen"><img src="assets/gifs/tema.gif" alt="Alternando entre tema claro e escuro" width="300" height="649" loading="lazy"></div></div><figcaption>Claro e escuro<small>Automático ou no botão do topo</small></figcaption></figure>
     </div>
   </div>
 </section>
@@ -80,8 +81,8 @@
       <p class="sub">Três passos, sem planilha e sem bloco de notas.</p>
     </div>
     <div class="steps">
-      <div class="step rv"><div class="n">1</div><h3>Monte suas matérias</h3><p>Crie módulos e matérias e escolha uma cor para cada uma. Tudo fica organizado desde o começo.</p></div>
-      <div class="step rv"><div class="n">2</div><h3>Lance provas e trabalhos</h3><p>Toque no <strong>+</strong>, escolha o tipo, o prazo e quando quer ser lembrada: na hora, 1 hora, 1 dia ou 3 dias antes.</p></div>
+      <div class="step rv"><div class="n">1</div><h3>Monte suas matérias</h3><p>Crie módulos (semestre, bimestre, curso) e as matérias de cada um, cada uma com sua cor.</p></div>
+      <div class="step rv"><div class="n">2</div><h3>Lance provas e trabalhos</h3><p>Toque no <strong>+</strong>, escolha o tipo, o prazo e o lembrete: na hora, 1 hora, 1 dia ou 3 dias antes.</p></div>
       <div class="step rv"><div class="n">3</div><h3>Estude e acompanhe</h3><p>Conclua com um toque, use o Pomodoro e veja no Resumo quantas tarefas fez e quantos dias seguidos estudou.</p></div>
     </div>
   </div>
@@ -93,15 +94,16 @@
     <div class="text rv">
       <div class="eyebrow">Módulos e matérias</div>
       <h2>Cada matéria com a <em>sua cor.</em></h2>
-      <p class="sub">Crie um módulo, adicione as matérias dele e escolha entre 8 cores. Nos cards e no calendário, você bate o olho e já sabe de qual matéria é.</p>
+      <p class="sub">Crie um módulo, adicione as matérias e escolha entre 8 cores. Nos cards e no calendário, você bate o olho e já sabe de qual matéria é.</p>
       <ul class="ticks">
-        <li><i class="fi">&#xf12b;</i> Módulos para agrupar as matérias de cada etapa do curso</li>
-        <li><i class="fi">&#xf12b;</i> Filtro e busca por tarefa ou matéria</li>
-        <li><i class="fi">&#xf12b;</i> Etapas (checklist) dentro de cada tarefa, com progresso no card</li>
+        <li><i class="ic">&#xe06c;</i> Módulos para agrupar as matérias de cada etapa do curso</li>
+        <li><i class="ic">&#xe06c;</i> Busca e filtro por tarefa, módulo ou matéria</li>
+        <li><i class="ic">&#xe06c;</i> Etapas (checklist) dentro de cada tarefa, com progresso no card</li>
+        <li><i class="ic">&#xe06c;</i> Foto do caderno ou da lousa anexada direto na tarefa</li>
       </ul>
     </div>
     <div class="stage rv">
-      <div class="phone"><div class="screen"><img src="assets/telas/subjects.png" alt="Tela de módulos e matérias com seletor de cores" width="1080" height="2400" loading="lazy"></div></div>
+      <div class="phone"><div class="screen"><img src="assets/telas/materias.png" alt="Tela de módulos e matérias com seletor de cores" width="540" height="1169" loading="lazy"></div></div>
     </div>
   </div>
 </section>
@@ -112,15 +114,15 @@
     <div class="text rv">
       <div class="eyebrow">Calendário</div>
       <h2>O mês inteiro <em>num relance.</em></h2>
-      <p class="sub">Veja os dias com provas e entregas marcados com a cor da matéria. Toque num dia para ver o que tem nele.</p>
+      <p class="sub">Os dias com provas e entregas aparecem marcados na cor da matéria. Toque num dia para ver o que tem nele.</p>
       <ul class="ticks">
-        <li><i class="fi">&#xf12b;</i> Marcadores coloridos por matéria</li>
-        <li><i class="fi">&#xf12b;</i> Lista do dia escolhido logo abaixo</li>
-        <li><i class="fi">&#xf12b;</i> Repetição semanal: ao concluir, a próxima nasce sozinha</li>
+        <li><i class="ic">&#xe06c;</i> Marcadores coloridos por matéria</li>
+        <li><i class="ic">&#xe06c;</i> Lista do dia escolhido logo abaixo</li>
+        <li><i class="ic">&#xe06c;</i> Repetição semanal, mensal ou a cada N dias: ao concluir, a próxima nasce sozinha</li>
       </ul>
     </div>
     <div class="stage rv">
-      <div class="phone"><div class="screen"><img src="assets/telas/calendar.png" alt="Calendário mensal do MaduTasks" width="1080" height="2400" loading="lazy"></div></div>
+      <div class="phone"><div class="screen"><img class="so-claro" src="assets/telas/calendario.png" alt="Calendário mensal do Studify" width="540" height="1169" loading="lazy"><img class="so-escuro" src="assets/telas/calendario-escuro.png" alt="Calendário mensal do Studify no tema escuro" width="540" height="1169" loading="lazy"></div></div>
     </div>
   </div>
 </section>
@@ -131,15 +133,15 @@
     <div class="text rv">
       <div class="eyebrow">Pomodoro</div>
       <h2>Foco de verdade, <em>sem complicar.</em></h2>
-      <p class="sub">25 minutos de foco e 5 de pausa, do jeito clássico. Dá para ajustar os tempos, e o app avisa quando o ciclo termina, mesmo em segundo plano.</p>
+      <p class="sub">25 minutos de foco e 5 de pausa, do jeito clássico. Ajuste os tempos como quiser: o cronômetro continua rodando em qualquer aba, em segundo plano e com o app fechado.</p>
       <ul class="ticks">
-        <li><i class="fi">&#xf12b;</i> Foco e pausa com tempos ajustáveis</li>
-        <li><i class="fi">&#xf12b;</i> Aviso no fim do ciclo com o app fechado</li>
-        <li><i class="fi">&#xf12b;</i> Cada ciclo concluído entra no seu resumo do mês</li>
+        <li><i class="ic">&#xe06c;</i> Foco e pausa com tempos ajustáveis</li>
+        <li><i class="ic">&#xe06c;</i> Aviso no fim do ciclo, mesmo com o app fechado</li>
+        <li><i class="ic">&#xe06c;</i> Cada ciclo concluído entra no resumo do mês</li>
       </ul>
     </div>
     <div class="stage rv">
-      <div class="phone"><div class="screen"><img src="assets/telas/pomodoro.png" alt="Pomodoro com cronômetro de 25 minutos" width="1080" height="2400" loading="lazy"></div></div>
+      <div class="phone"><div class="screen"><img class="so-claro" src="assets/telas/pomodoro.png" alt="Pomodoro com cronômetro de 25 minutos" width="540" height="1169" loading="lazy"><img class="so-escuro" src="assets/telas/pomodoro-escuro.png" alt="Pomodoro no tema escuro" width="540" height="1169" loading="lazy"></div></div>
     </div>
   </div>
 </section>
@@ -152,13 +154,13 @@
       <h2>Seu progresso, <em>sem esforço.</em></h2>
       <p class="sub">Concluídas, pendentes, atrasadas e a sequência de dias estudando. Lançou a nota de uma prova? O app calcula a média por matéria.</p>
       <ul class="ticks">
-        <li><i class="fi">&#xf12b;</i> Sequência de dias seguidos de estudo</li>
-        <li><i class="fi">&#xf12b;</i> Média das provas por matéria</li>
-        <li><i class="fi">&#xf12b;</i> Confete ao concluir uma tarefa</li>
+        <li><i class="ic">&#xe06c;</i> Sequência de dias seguidos de estudo</li>
+        <li><i class="ic">&#xe06c;</i> Média das provas por matéria</li>
+        <li><i class="ic">&#xe06c;</i> Horas de foco do Pomodoro no mês</li>
       </ul>
     </div>
     <div class="stage rv">
-      <div class="phone"><div class="screen"><img src="assets/telas/stats.png" alt="Tela de resumo no tema escuro" width="1080" height="2400" loading="lazy"></div></div>
+      <div class="phone"><div class="screen"><img class="so-claro" src="assets/telas/resumo.png" alt="Tela de resumo" width="540" height="1169" loading="lazy"><img class="so-escuro" src="assets/telas/resumo-escuro.png" alt="Tela de resumo no tema escuro" width="540" height="1169" loading="lazy"></div></div>
     </div>
   </div>
 </section>
@@ -171,12 +173,12 @@
       <h2>Tudo que a rotina de estudos <em>pede.</em></h2>
     </div>
     <div class="grid">
-      <div class="tile rv"><i class="fi">&#xf11e;</i><h3>Lembretes locais</h3><p>Avisos que funcionam com o app fechado e sem internet.</p></div>
-      <div class="tile rv"><i class="fi">&#xf12d;</i><h3>Tarefas com tipo</h3><p>Prova, trabalho ou tarefa, cada um com sua cor e prazo.</p></div>
-      <div class="tile rv"><i class="fi">&#xf1c9;</i><h3>Repetição</h3><p>Tarefas que se repetem toda semana, sem precisar recriar.</p></div>
-      <div class="tile rv"><i class="fi">&#xf1a7;</i><h3>Tema claro e escuro</h3><p>Automático, de acordo com o celular, ou o que você preferir.</p></div>
-      <div class="tile rv"><i class="fi">&#xf1ce;</i><h3>Backup</h3><p>Exporte e importe seus dados num arquivo, quando quiser.</p></div>
-      <div class="tile rv"><i class="fi">&#xf13a;</i><h3>Sincronização opcional</h3><p>Mantenha celular e tablet iguais, se você ativar.</p></div>
+      <div class="tile rv"><i class="ic">&#xe224;</i><h3>Lembretes locais</h3><p>Avisos que funcionam com o app fechado e sem internet.</p></div>
+      <div class="tile rv"><i class="ic">&#xe0ff;</i><h3>Widget</h3><p>As próximas tarefas direto na tela inicial do Android.</p></div>
+      <div class="tile rv"><i class="ic">&#xe146;</i><h3>Repetição</h3><p>Semanal, mensal ou a cada N dias, sem precisar recriar.</p></div>
+      <div class="tile rv"><i class="ic">&#xe064;</i><h3>Fotos nas tarefas</h3><p>Fotografe o caderno ou a lousa e anexe na tarefa.</p></div>
+      <div class="tile rv"><i class="ic">&#xe4e5;</i><h3>Backup</h3><p>Exporte e importe seus dados num arquivo, quando quiser.</p></div>
+      <div class="tile rv"><i class="ic">&#xe088;</i><h3>Sincronização opcional</h3><p>Celular e tablet com os mesmos dados, se você ativar.</p></div>
     </div>
   </div>
 </section>
@@ -186,14 +188,14 @@
   <div class="wrap center">
     <div class="rv">
       <div class="eyebrow">Por dentro do app</div>
-      <h2>Cada tela, <em>pensada com carinho.</em></h2>
-      <p class="sub">Prints reais do MaduTasks.</p>
+      <h2>Cada tela, <em>no claro e no escuro.</em></h2>
+      <p class="sub">Prints reais do Studify. Use o botão do topo para ver no outro tema.</p>
     </div>
     <div class="gallery">
-      <figure class="rv"><div class="phone"><div class="screen"><img src="assets/telas/home-light.png" alt="Tarefas, tema claro" width="1080" height="2400" loading="lazy"></div></div><figcaption>Tarefas<small>Busca, filtros e botão +</small></figcaption></figure>
-      <figure class="rv"><div class="phone"><div class="screen"><img src="assets/telas/home-dark.png" alt="Tarefas, tema escuro" width="1080" height="2400" loading="lazy"></div></div><figcaption>Tema escuro<small>Confortável à noite</small></figcaption></figure>
-      <figure class="rv"><div class="phone"><div class="screen"><img src="assets/telas/calendar.png" alt="Calendário" width="1080" height="2400" loading="lazy"></div></div><figcaption>Calendário<small>O mês num relance</small></figcaption></figure>
-      <figure class="rv"><div class="phone"><div class="screen"><img src="assets/telas/stats.png" alt="Resumo" width="1080" height="2400" loading="lazy"></div></div><figcaption>Resumo<small>Sequência, médias e números</small></figcaption></figure>
+      <figure class="rv"><div class="phone"><div class="screen"><img class="so-claro" src="assets/telas/tarefas.png" alt="Tarefas" width="540" height="1169" loading="lazy"><img class="so-escuro" src="assets/telas/tarefas-escuro.png" alt="Tarefas" width="540" height="1169" loading="lazy"></div></div><figcaption>Tarefas<small>Busca, filtros e o botão +</small></figcaption></figure>
+      <figure class="rv"><div class="phone"><div class="screen"><img src="assets/telas/nova-tarefa.png" alt="Nova tarefa" width="540" height="1169" loading="lazy"></div></div><figcaption>Nova tarefa<small>Tudo numa tela só</small></figcaption></figure>
+      <figure class="rv"><div class="phone"><div class="screen"><img class="so-claro" src="assets/telas/calendario.png" alt="Calendário" width="540" height="1169" loading="lazy"><img class="so-escuro" src="assets/telas/calendario-escuro.png" alt="Calendário" width="540" height="1169" loading="lazy"></div></div><figcaption>Calendário<small>O mês num relance</small></figcaption></figure>
+      <figure class="rv"><div class="phone"><div class="screen"><img class="so-claro" src="assets/telas/resumo.png" alt="Resumo" width="540" height="1169" loading="lazy"><img class="so-escuro" src="assets/telas/resumo-escuro.png" alt="Resumo" width="540" height="1169" loading="lazy"></div></div><figcaption>Resumo<small>Sequência, médias e números</small></figcaption></figure>
     </div>
   </div>
 </section>
@@ -201,51 +203,46 @@
 <!-- PRIVACIDADE -->
 <section id="privacidade">
   <div class="wrap center rv">
-    <div class="lock"><i class="fi">&#xf193;</i></div>
+    <div class="lock"><i class="ic">&#xe1ff;</i></div>
     <div class="eyebrow">Privacidade</div>
     <h2>Seus dados ficam <em>com você.</em></h2>
-    <p class="sub">Tudo é guardado num banco dentro do seu celular, e o app funciona sem internet. A nuvem só entra se você quiser sincronizar com outro aparelho.</p>
+    <p class="sub">Tudo é guardado num banco dentro do seu celular, e o app funciona sem internet. Sem conta, sem anúncio, sem rastreamento. A nuvem só entra se você quiser sincronizar com outro aparelho.</p>
   </div>
 </section>
 
 <!-- BAIXAR -->
-<section class="final" id="baixar">
+<section class="final pautado" id="baixar">
   <div class="wrap rv">
-    <video class="logo-anim" id="logoAnim" src="assets/logo-animada.mp4" poster="assets/icon.png" muted playsinline preload="auto" aria-label="Ícone do MaduTasks"></video>
-    <h2>Leve o MaduTasks <em>com você.</em></h2>
+    <img class="icone" src="assets/icon.png" alt="Ícone do Studify" width="104" height="104">
+    <h2>Leve o Studify <em>com você.</em></h2>
     <p class="sub">Disponível para Android, em APK. Instale, crie suas matérias e lance a primeira prova.</p>
     <div class="cta">
-      <a class="btn btn-primary" href="https://github.com/OtavioFelix-in/Madu-Tasks-Site/releases/latest/download/MaduTasks.apk"><i class="fi">&#xf15b;</i> Baixar o APK</a>
-      <a class="btn btn-ghost" href="https://github.com/OtavioFelix-in/Madu-Tasks-Site/releases">Todas as versões</a>
+      <a class="btn btn-primary" data-apk href="#"><i class="ic">&#xe0b2;</i> Baixar o APK</a>
+      <a class="btn btn-ghost" data-releases href="#">Todas as versões</a>
     </div>
   </div>
 </section>
 
-<footer>MaduTasks · feito por Otávio Felix para a Madu.</footer>
+<footer>Studify · feito por Otávio Felix</footer>
 
 <script>
-  // Cole aqui o ID do vídeo do YouTube (ex.: "D5vo4k-0MrI") depois de postar.
-  // Vazio = toca o arquivo local MaduTasks-promo.mp4.
-  var YOUTUBE_ID = '';
-  // false se o vídeo for horizontal (16:9).
-  var VIDEO_VERTICAL = true;
+  // Repositório no GitHub onde ficam os releases com o APK (dono/nome) e o nome do arquivo.
+  var RELEASES_REPO = 'OtavioFelix-in/Studify-Site';
+  var APK_FILE = 'Studify.apk';
 
-  var box = document.getElementById('videoBox');
-  if (!VIDEO_VERTICAL) box.classList.add('wide');
-  if (YOUTUBE_ID) {
-    box.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + YOUTUBE_ID +
-      '?rel=0" title="Vídeo do MaduTasks" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>';
-  }
+  var base = 'https://github.com/' + RELEASES_REPO + '/releases';
+  document.querySelectorAll('[data-apk]').forEach(function (a) { a.href = base + '/latest/download/' + APK_FILE; });
+  document.querySelectorAll('[data-releases]').forEach(function (a) { a.href = base; });
 
   // tema claro/escuro (lembra a escolha)
   var root = document.documentElement, btn = document.getElementById('themeBtn');
   function setTheme(t) {
     root.setAttribute('data-theme', t);
-    btn.innerHTML = '<i class="fi">' + (t === 'dark' ? '&#xf1e7;' : '&#xf1a7;') + '</i>';
-    try { localStorage.setItem('madu-theme', t); } catch (e) {}
+    btn.innerHTML = '<i class="ic">' + (t === 'dark' ? '&#xe178;' : '&#xe11e;') + '</i>';
+    try { localStorage.setItem('studify-theme', t); } catch (e) {}
   }
   var saved = null;
-  try { saved = localStorage.getItem('madu-theme'); } catch (e) {}
+  try { saved = localStorage.getItem('studify-theme'); } catch (e) {}
   setTheme(saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
   btn.addEventListener('click', function () { setTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'); });
 
@@ -254,14 +251,6 @@
     es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
   }, { threshold: .15 });
   document.querySelectorAll('.rv').forEach(function (el) { io.observe(el); });
-
-  // logo animada da seção Baixar: toca uma vez quando aparece na tela
-  var logo = document.getElementById('logoAnim');
-  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    new IntersectionObserver(function (es, obs) {
-      if (es[0].isIntersecting) { logo.play().catch(function () {}); obs.disconnect(); }
-    }, { threshold: .6 }).observe(logo);
-  }
 </script>
 </body>
 </html>
