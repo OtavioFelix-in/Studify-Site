@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Studify — provas, trabalhos e prazos num lugar só</title>
-<meta name="description" content="Studify é uma agenda de estudos para Android: provas, trabalhos, lembretes, calendário, Pomodoro, resumo e widget. Funciona 100% offline.">
+<meta name="description" content="Studify é uma agenda de estudos para Android: provas, trabalhos, lembretes, calendário, cronômetro, média e faltas por matéria, anotações e widget. Funciona 100% offline, sem conta e sem nuvem.">
 <meta name="theme-color" content="#1F3A93">
 <meta property="og:title" content="Studify — provas, trabalhos e prazos num lugar só">
-<meta property="og:description" content="Agenda de estudos offline para Android, com lembretes, Pomodoro, calendário e widget.">
+<meta property="og:description" content="Agenda de estudos offline para Android, com lembretes, calendário, cronômetro, média por matéria e widget.">
 <meta property="og:image" content="assets/icon.png">
 <link rel="icon" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/icon.png">
@@ -23,7 +23,7 @@
       <li><a href="#acao">Em ação</a></li>
       <li><a href="#como">Como funciona</a></li>
       <li><a href="#calendario">Calendário</a></li>
-      <li><a href="#pomodoro">Pomodoro</a></li>
+      <li><a href="#cronometro">Cronômetro</a></li>
       <li><a href="#privacidade">Privacidade</a></li>
     </ul>
     <div class="nav-r">
@@ -37,7 +37,7 @@
 <div class="hero pautado" id="topo">
   <div class="wrap">
     <div>
-      <span class="pill"><i class="ic">&#xe1af;</i> 100% offline · sem anúncio · sem cadastro</span>
+      <span class="pill"><i class="ic">&#xe1af;</i> 100% offline · sem conta · sem nuvem · sem anúncio</span>
       <h1>Provas, trabalhos e prazos <em>num lugar só.</em></h1>
       <p class="lead">Você anota, o Studify <strong>avisa na hora certa</strong> e mostra como andam seus estudos. Abriu o app, sabe em dois segundos o que vence primeiro.</p>
       <div class="cta">
@@ -62,7 +62,7 @@
     <div class="rv">
       <div class="eyebrow">Veja em 30 segundos</div>
       <h2>Nenhum prazo <em>escapa.</em></h2>
-      <p class="sub">Da prova anotada ao lembrete na hora certa: o calendário do mês, o Pomodoro e o seu progresso, tudo num lugar só.</p>
+      <p class="sub">Da prova anotada ao lembrete na hora certa: o calendário do mês, o tempo de estudo e o seu progresso, tudo num lugar só.</p>
       <div class="cta"><a class="btn btn-ghost" href="https://youtube.com/shorts/MS2kVUKjBIE" target="_blank" rel="noopener">Abrir no YouTube</a></div>
     </div>
     <div class="rv">
@@ -82,7 +82,7 @@
     <div class="acao">
       <figure class="rv"><div class="phone"><div class="screen"><img src="assets/gifs/nova-tarefa.gif" alt="Criando uma prova no Studify" width="300" height="649" loading="lazy"></div></div><figcaption>Nova tarefa<small>Tipo, matéria, prazo e lembrete</small></figcaption></figure>
       <figure class="rv"><div class="phone"><div class="screen"><img src="assets/gifs/concluir.gif" alt="Concluindo uma tarefa com confete" width="300" height="649" loading="lazy"></div></div><figcaption>Concluir<small>Um toque, com confete</small></figcaption></figure>
-      <figure class="rv"><div class="phone"><div class="screen"><img src="assets/gifs/tour.gif" alt="Passeio pelas abas do app" width="300" height="649" loading="lazy"></div></div><figcaption>Quatro abas<small>Tarefas, calendário, Pomodoro e resumo</small></figcaption></figure>
+      <figure class="rv"><div class="phone"><div class="screen"><img src="assets/gifs/tour.gif" alt="Passeio pelas abas do app" width="300" height="649" loading="lazy"></div></div><figcaption>Quatro abas<small>Tarefas, calendário, cronômetro e resumo</small></figcaption></figure>
       <figure class="rv"><div class="phone"><div class="screen"><img src="assets/gifs/tema.gif" alt="Alternando entre tema claro e escuro" width="300" height="649" loading="lazy"></div></div><figcaption>Claro e escuro<small>Automático ou no botão do topo</small></figcaption></figure>
     </div>
   </div>
@@ -99,7 +99,7 @@
     <div class="steps">
       <div class="step rv"><div class="n">1</div><h3>Monte suas matérias</h3><p>Crie módulos (semestre, bimestre, curso) e as matérias de cada um, cada uma com sua cor.</p></div>
       <div class="step rv"><div class="n">2</div><h3>Lance provas e trabalhos</h3><p>Toque no <strong>+</strong>, escolha o tipo, o prazo e o lembrete: na hora, 1 hora, 1 dia ou 3 dias antes.</p></div>
-      <div class="step rv"><div class="n">3</div><h3>Estude e acompanhe</h3><p>Conclua com um toque, use o Pomodoro e veja no Resumo quantas tarefas fez e quantos dias seguidos estudou.</p></div>
+      <div class="step rv"><div class="n">3</div><h3>Estude e acompanhe</h3><p>Conclua com um toque, marque o tempo no cronômetro e veja no Resumo quantas tarefas fez e quantos dias seguidos estudou.</p></div>
     </div>
   </div>
 </section>
@@ -113,8 +113,9 @@
       <p class="sub">Crie um módulo, adicione as matérias e escolha entre 8 cores. Nos cards e no calendário, você bate o olho e já sabe de qual matéria é.</p>
       <ul class="ticks">
         <li><i class="ic">&#xe06c;</i> Módulos para agrupar as matérias de cada etapa do curso</li>
-        <li><i class="ic">&#xe06c;</i> Busca e filtro por tarefa, módulo ou matéria</li>
-        <li><i class="ic">&#xe06c;</i> Etapas (checklist) dentro de cada tarefa, com progresso no card</li>
+        <li><i class="ic">&#xe06c;</i> Tarefas numa folha de caderno, com o dia e o tipo na margem</li>
+        <li><i class="ic">&#xe06c;</i> Busca nas tarefas e nas anotações, com filtro por módulo ou matéria</li>
+        <li><i class="ic">&#xe06c;</i> Etapas (checklist) dentro de cada tarefa, com progresso</li>
         <li><i class="ic">&#xe06c;</i> Foto do caderno ou da lousa anexada direto na tarefa</li>
       </ul>
     </div>
@@ -124,8 +125,27 @@
   </div>
 </section>
 
+<!-- MÉDIA E FALTAS -->
+<section id="media" class="alt">
+  <div class="wrap center">
+    <div class="rv">
+      <div class="eyebrow">Média e faltas</div>
+      <h2>Cada matéria com <em>a sua página.</em></h2>
+      <p class="sub">Toque numa matéria e veja tudo dela num lugar: a média com a regra do seu curso, as faltas, as avaliações, o caderno de anotações, as tarefas e o tempo de estudo.</p>
+    </div>
+    <div class="grid">
+      <div class="tile rv"><h3>Regra de média do seu curso</h3><p>Média simples, com pesos, soma de pontos, só as melhores notas ou com exame final. Ou escreva a sua própria fórmula.</p></div>
+      <div class="tile rv"><h3>Quanto falta para passar</h3><p>Lance as notas que já saíram e o app mostra a média atual e o que você precisa tirar nas próximas.</p></div>
+      <div class="tile rv"><h3>Faltas e frequência</h3><p>Aulas no semestre, faltas e a sua presença em %, com aviso quando passa do mínimo.</p></div>
+      <div class="tile rv"><h3>Caderno de anotações</h3><p>Anotações por matéria, com fotos, salvas sozinhas enquanto você escreve.</p></div>
+      <div class="tile rv"><h3>Nota de 0 a 10 ou de 0 a 100</h3><p>Escolha a escala que a sua escola usa.</p></div>
+      <div class="tile rv"><h3>Tudo da matéria junto</h3><p>Avaliações, tarefas e provas da matéria e o tempo de estudo no cronômetro, na mesma tela.</p></div>
+    </div>
+  </div>
+</section>
+
 <!-- CALENDÁRIO -->
-<section id="calendario" class="alt">
+<section id="calendario">
   <div class="wrap feature flip">
     <div class="text rv">
       <div class="eyebrow">Calendário</div>
@@ -143,36 +163,34 @@
   </div>
 </section>
 
-<!-- POMODORO -->
-<section id="pomodoro">
-  <div class="wrap feature">
-    <div class="text rv">
-      <div class="eyebrow">Pomodoro</div>
-      <h2>Foco de verdade, <em>sem complicar.</em></h2>
-      <p class="sub">25 minutos de foco e 5 de pausa, do jeito clássico. Ajuste os tempos como quiser: o cronômetro continua rodando em qualquer aba, em segundo plano e com o app fechado.</p>
-      <ul class="ticks">
-        <li><i class="ic">&#xe06c;</i> Foco e pausa com tempos ajustáveis</li>
-        <li><i class="ic">&#xe06c;</i> Aviso no fim do ciclo, mesmo com o app fechado</li>
-        <li><i class="ic">&#xe06c;</i> Cada ciclo concluído entra no resumo do mês</li>
-      </ul>
+<!-- CRONÔMETRO -->
+<section id="cronometro" class="alt">
+  <div class="wrap center">
+    <div class="rv">
+      <div class="eyebrow">Cronômetro</div>
+      <h2>Quanto você estudou, <em>de verdade.</em></h2>
+      <p class="sub">Escolha a matéria e dê o play. O cronômetro continua contando em qualquer aba, em segundo plano e com o app fechado. Ao zerar, o tempo vai para o Resumo.</p>
     </div>
-    <div class="stage rv">
-      <div class="phone"><div class="screen"><img class="so-claro" src="assets/telas/pomodoro.png" alt="Pomodoro com cronômetro de 25 minutos" width="540" height="1169" loading="lazy"><img class="so-escuro" src="assets/telas/pomodoro-escuro.png" alt="Pomodoro no tema escuro" width="540" height="1169" loading="lazy"></div></div>
+    <div class="grid">
+      <div class="tile rv"><h3>Por matéria</h3><p>Cada sessão fica anotada na matéria, e você vê quanto tempo deu a cada uma.</p></div>
+      <div class="tile rv"><h3>Voltas</h3><p>Marque trechos do estudo, como um capítulo ou uma lista de exercícios.</p></div>
+      <div class="tile rv"><h3>Não para sozinho</h3><p>Trocou de aba ou fechou o app? O tempo continua certo quando você volta.</p></div>
     </div>
   </div>
 </section>
 
 <!-- RESUMO -->
-<section class="alt">
+<section>
   <div class="wrap feature flip">
     <div class="text rv">
       <div class="eyebrow">Resumo</div>
       <h2>Seu progresso, <em>sem esforço.</em></h2>
-      <p class="sub">Concluídas, pendentes, atrasadas e a sequência de dias estudando. Lançou a nota de uma prova? O app calcula a média por matéria.</p>
+      <p class="sub">Concluídas, pendentes, atrasadas e a sequência de dias estudando. Lançou as notas? A média de cada matéria aparece aqui.</p>
       <ul class="ticks">
         <li><i class="ic">&#xe06c;</i> Sequência de dias seguidos de estudo</li>
-        <li><i class="ic">&#xe06c;</i> Média das provas por matéria</li>
-        <li><i class="ic">&#xe06c;</i> Horas de foco do Pomodoro no mês</li>
+        <li><i class="ic">&#xe06c;</i> Médias por matéria</li>
+        <li><i class="ic">&#xe06c;</i> Tempo de estudo no mês, por matéria</li>
+        <li><i class="ic">&#xe06c;</i> Concluídas por tipo: provas, trabalhos e tarefas</li>
       </ul>
     </div>
     <div class="stage rv">
@@ -182,7 +200,7 @@
 </section>
 
 <!-- RECURSOS -->
-<section>
+<section class="alt">
   <div class="wrap center">
     <div class="rv">
       <div class="eyebrow">Recursos</div>
@@ -193,14 +211,14 @@
       <div class="tile rv"><i class="ic">&#xe0ff;</i><h3>Widget</h3><p>As próximas tarefas direto na tela inicial do Android.</p></div>
       <div class="tile rv"><i class="ic">&#xe146;</i><h3>Repetição</h3><p>Semanal, mensal ou a cada N dias, sem precisar recriar.</p></div>
       <div class="tile rv"><i class="ic">&#xe064;</i><h3>Fotos nas tarefas</h3><p>Fotografe o caderno ou a lousa e anexe na tarefa.</p></div>
-      <div class="tile rv"><i class="ic">&#xe4e5;</i><h3>Backup</h3><p>Exporte e importe seus dados num arquivo, quando quiser.</p></div>
-      <div class="tile rv"><i class="ic">&#xe088;</i><h3>Sincronização opcional</h3><p>Celular e tablet com os mesmos dados, se você ativar.</p></div>
+      <div class="tile rv"><i class="ic">&#xe4e5;</i><h3>Backup em arquivo</h3><p>Exporte seus dados num arquivo e importe no celular novo. O app ainda lembra você de fazer.</p></div>
+      <div class="tile rv"><i class="ic">&#xe1ff;</i><h3>Bloqueio do app</h3><p>Tranque com PIN e, se quiser, desbloqueie com a digital ou o rosto.</p></div>
     </div>
   </div>
 </section>
 
 <!-- GALERIA -->
-<section class="alt">
+<section>
   <div class="wrap center">
     <div class="rv">
       <div class="eyebrow">Por dentro do app</div>
@@ -217,12 +235,12 @@
 </section>
 
 <!-- PRIVACIDADE -->
-<section id="privacidade">
+<section id="privacidade" class="alt">
   <div class="wrap center rv">
     <div class="lock"><i class="ic">&#xe1ff;</i></div>
     <div class="eyebrow">Privacidade</div>
     <h2>Seus dados ficam <em>com você.</em></h2>
-    <p class="sub">Tudo é guardado num banco dentro do seu celular, e o app funciona sem internet. Sem conta, sem anúncio, sem rastreamento. A nuvem só entra se você quiser sincronizar com outro aparelho.</p>
+    <p class="sub">Tudo é guardado só no seu celular, e o app nem pede acesso à internet. Sem conta, sem nuvem, sem anúncio, sem rastreamento. Para trocar de aparelho, exporte um backup em arquivo e importe no novo.</p>
   </div>
 </section>
 
